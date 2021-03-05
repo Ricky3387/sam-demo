@@ -15,8 +15,8 @@ Resources:
       Runtime: java8
       CodeUri: target/spring-cloud-function-example-0.0.1-SNAPSHOT-aws.jar
       Description: 'Lambda function for CD Demo'
-      MemorySize: 128
-      Timeout: 30
+      MemorySize: 512
+      Timeout: 60
       Role: 'arn:aws:iam::642030066069:role/service-role/hello-function-role-6866g18d'
       Events:
         getAZsAPI:
