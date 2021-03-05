@@ -19,7 +19,7 @@ public class Hello implements Function<APIGatewayProxyRequestEvent, APIGatewayPr
         APIGatewayProxyResponseEvent responseEvent = new APIGatewayProxyResponseEvent();
         LOGGER.info("Input :" +input.getBody());
         responseEvent.setStatusCode(200);
-        responseEvent.setBody("Hello! Reached the Spring Cloud Function with message: " + input.getBody());
+        responseEvent.setBody("Hello! Reached the Spring Cloud Function with message 222: " + input.getBody());
         return responseEvent;
     }
 }
