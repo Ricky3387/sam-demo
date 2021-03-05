@@ -17,7 +17,7 @@ public class Hello implements Function<APIGatewayProxyRequestEvent, APIGatewayPr
     @Override
     public APIGatewayProxyResponseEvent apply(APIGatewayProxyRequestEvent input) {
         APIGatewayProxyResponseEvent responseEvent = new APIGatewayProxyResponseEvent();
-        LOGGER.info(input.getBody());
+        LOGGER.info("Input :" +input.getBody());
         responseEvent.setStatusCode(200);
         responseEvent.setBody("Hello! Reached the Spring Cloud Function with message: " + input.getBody());
         return responseEvent;
