@@ -7,7 +7,7 @@ phases:
       
   build:
     commands:
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket first-bucket-87 --output-template-file outputSamTemplate.yaml
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket first-bucket-assets --output-template-file outputSamTemplate.yaml
 
 artifacts:
   type: zip
